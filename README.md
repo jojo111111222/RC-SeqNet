@@ -12,5 +12,8 @@ pip install -r requirements.txt
 #数据集--ISIC-2019
 下载地址：https://challenge.isic-archive.com/data/#2019
 解压到:/RC-SeqNet/mnt
+权重文件下载地址：
+链接: https://pan.baidu.com/s/1yhICr2T3yt_HLsBKxRgy5g?pwd=3gcj 提取码: 3gcj
+解压到/RC-SeqNet/checkpoints/
 # 运行指令
 bash test.sh
