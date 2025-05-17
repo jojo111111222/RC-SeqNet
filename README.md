@@ -1,5 +1,9 @@
 # RC-SeqNet
 As a course project in Computer Vision，Bias Mitigation in ISIC Skin Lesion Classification via Gradient Penalty
+#设备
+Pytorch=2.0.0
+cuda=11.8
+python=3.8.10
 # 环境配置
 conda create -n cv python=3.8.10
 conda activate cv
