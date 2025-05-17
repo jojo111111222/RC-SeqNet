@@ -1,0 +1,62 @@
+artifact: artificial
+artifact_type: lsb
+attacked_classes:
+- MEL
+batch_size: 64
+ckpt_path: checkpoints/checkpoint_resnet18_isic_attacked_lsb.pth
+ckpt_path_corrected: checkpoints/resnet18_Vanilla_sgd_lr0.0001_artificial_last_conv/last.ckpt
+data_paths:
+- /mnt
+dataset_name: isic_attacked
+device: cuda
+img_size: 224
+lamb: 0.0
+layer_name: last_conv
+loss: cross_entropy
+lr: 0.0001
+lsb_factor: 3
+lsb_trigger: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+  dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+  ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+  diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+  kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   Duis autem
+  vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+  illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+  qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   Ut wisi enim
+  ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+  aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+  vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+  at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+  delenit augue duis dolore te feugait nulla facilisi.   Nam liber tempor cum soluta
+  nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+  possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+  wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+  nisl ut aliquip ex ea commodo consequat.   Duis autem vel eum iriure dolor in hendrerit
+  in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   At
+  vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+  dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+  dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+  ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At
+  accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor
+  et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus
+  sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+  sit amet, consetetur
+method: Vanilla
+model_name: resnet18
+num_epochs: 10
+optimizer: sgd
+p_artifact: 0.1
+unique_wandb_ids: true
+wandb_api_key: your_api_key
+wandb_project_name: your_project_name
